@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Little Secret ✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="music-notes-container"></div>
+
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="scrapbook">
+        <div class="page left-page">
+            <div class="photo-frame polaroid-effect">
+                <img src="Love.jpg" alt="Our Memory" id="mainPhoto">
+                <div class="tape top-left"></div>
+                <div class="tape bottom-right"></div>
+            </div>
+            <p class="date">I IiKE PEOPLE NAMED AIR ✨</p>
+        </div>
+
+        <div class="page right-page">
+            <div id="envelope-wrapper" onclick="openEnvelope()">
+                <div class="envelope">
+                    <div class="heart-seal">❤️</div>
+                </div>
+                <p class="tap-hint">คลิกที่ซองจดหมายเพื่อเปิดอ่านนะ...</p>
+            </div>
+
+            <div class="content hidden" id="mainContent">
+                <h1 class="title">ถึง... คนพิเศษ</h1>
+                <p class="message" id="typewriter"></p>
+                
+                <div class="interaction hidden" id="interactionArea">
+                    <h2 class="question">เป็นแฟนกับเราไหมคะ? ❤️</h2>
+                    <div class="btn-group">
+                        <button id="yesBtn">ตกลงที่สุดเลย</button>
+                        <button id="noBtn" class="move-btn">ไม่ล่ะ (หยอกๆ)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
